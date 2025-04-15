@@ -163,10 +163,10 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-.header-top-contact .contact-list-item--icon {
+.header-top-contact .contact-list-item--icon .contact-list-item-link {
   display: none;
 }
-.header-top-contact .contact-list > svg {
+.header-top-contact svg {
   display: none;
 }
 .header-footer {
@@ -201,6 +201,25 @@ body {
 .header-footer-nav .nav-list {
   display: flex;
   gap: 15px;
+}
+.header-footer-nav .nav-list-item {
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+.header-footer-nav .nav-list-item-link {
+  color: #24A3FF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-footer-nav .nav-list-item-link--active {
+  color: #F0145A;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-footer-nav .nav-list-item--active {
+  border-bottom: 2px solid #F0145A;
 }
 
 .section-info {
@@ -358,13 +377,13 @@ body {
   align-items: center;
   gap: 14px;
 }
-.section-achievements .achievements-container-switch-list-item-elements {
-  opacity: 0.2;
-  fill: #24A3FF;
-}
-.section-achievements .achievements-container-switch-list-item-item:hover svg.achievements-container-switch-list-item-elements {
+.section-achievements .achievements-container-switch-list-item:hover svg.achievements-container-switch-list-item-elements {
   transition: all 0.4s ease;
   opacity: 1;
+  fill: #24A3FF;
+}
+.section-achievements .achievements-container-switch-list-item-elements {
+  opacity: 0.2;
   fill: #24A3FF;
 }
 
@@ -430,4 +449,69 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
+}
+
+@media screen and (min-width: 767px) {
+  .header-top {
+    display: flex;
+    justify-content: start;
+    gap: 6px;
+    padding: 50px 60px 30px;
+    background-color: #fff;
+  }
+  .header-top-contact .contact-list svg {
+    display: block;
+  }
+  .header-top-contact .contact-list-item--address .contact-list-item-link {
+    display: block;
+  }
+  .header-top-contact .contact-list-item--icon .contact-list-item-link {
+    display: block;
+  }
+  .header-footer {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .header-footer-logo .logo-link {
+    padding: 0;
+  }
+  .header-footer-logo .logo-link-svg {
+    max-width: 159px;
+  }
+  .header-footer-logo .logo-link-svg-element-1 {
+    width: 130px;
+  }
+  .header-footer-logo .logo-link-svg-element-2 {
+    width: 21px;
+  }
+  .header-footer-logo .logo-link-svg-element-3 {
+    width: 130px;
+  }
+  .header-footer-logo .logo-link-text {
+    font-size: 36px;
+  }
+  .header-footer-burger {
+    display: none;
+  }
+  .header-footer-nav {
+    display: block;
+  }
+  .section-info {
+    padding: 60px 60px 0;
+  }
+  .section-info-main {
+    max-width: 648px;
+  }
+  .section-info-main .main-header {
+    font-size: 38px;
+  }
+  .section-info-aside .aside-list {
+    max-width: none;
+  }
+  .section-team {
+    padding-top: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */

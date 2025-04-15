@@ -60,11 +60,14 @@ body {
                 }
 
                 &-item--icon {
-                    display: none;
+                    .contact-list-item-link {
+                        display: none;
+                    }
+
                 }
             }
 
-            .contact-list>svg {
+            svg {
                 display: none;
             }
         }
@@ -104,9 +107,34 @@ body {
         &-nav {
             display: none;
 
+
             .nav-list {
                 display: flex;
                 gap: 15px;
+
+
+                &-item {
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid transparent;
+
+                    &-link {
+                        color: #24A3FF;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    &-link--active {
+                        color: #F0145A;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+
+                &-item--active {
+                    border-bottom: 2px solid #F0145A;
+                }
             }
         }
     }
@@ -266,8 +294,6 @@ body {
             justify-content: center;
             align-items: center;
 
-            &-img {}
-
             &-img2 {
                 display: none;
             }
@@ -287,15 +313,15 @@ body {
             align-items: center;
             gap: 14px;
 
+            &-item:hover svg.achievements-container-switch-list-item-elements {
+                transition: all 0.4s ease;
+                opacity: 1;
+                fill: #24A3FF;
+            }
+
             &-item {
                 &-elements {
                     opacity: 0.2;
-                    fill: #24A3FF;
-                }
-
-                &-item:hover svg.achievements-container-switch-list-item-elements {
-                    transition: all 0.4s ease;
-                    opacity: 1;
                     fill: #24A3FF;
                 }
             }
@@ -378,5 +404,103 @@ body {
                 line-height: normal;
             }
         }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .header {
+        &-top {
+            display: flex;
+            justify-content: start;
+            gap: 6px;
+            padding: 50px 60px 30px;
+            background-color: #fff;
+
+            &-contact {
+                .contact-list {
+                    svg {
+                        display: block;
+                    }
+
+                    &-item--address {
+                        .contact-list-item-link {
+                            display: block;
+                        }
+                    }
+
+                    &-item--icon {
+                        .contact-list-item-link {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-footer {
+            padding: 0 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+
+            &-logo {
+                .logo-link {
+                    padding: 0;
+
+                    &-svg {
+                        max-width: 159px;
+
+                        &-element-1 {
+                            width: 130px;
+                        }
+
+                        &-element-2 {
+                            width: 21px;
+                        }
+
+                        &-element-3 {
+                            width: 130px;
+                        }
+                    }
+
+                    &-text {
+                        font-size: 36px;
+                    }
+                }
+
+
+            }
+
+            &-burger {
+                display: none;
+            }
+
+            &-nav {
+                display: block;
+            }
+        }
+    }
+
+    .section-info {
+        padding: 60px 60px 0;
+
+        &-main {
+            max-width: 648px;
+
+            .main-header {
+                font-size: 38px;
+            }
+        }
+
+        &-aside {
+            .aside-list {
+                max-width: none;
+            }
+        }
+    }
+
+    .section-team {
+        padding-top: 60px;
     }
 }
