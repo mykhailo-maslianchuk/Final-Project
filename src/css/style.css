@@ -362,7 +362,7 @@ body {
   opacity: 0.2;
   fill: #24A3FF;
 }
-.section-achievements .achievements-container-switch-list-item:hover svg.achievements-container-switch-list-item-elements {
+.section-achievements .achievements-container-switch-list-item-item:hover svg.achievements-container-switch-list-item-elements {
   transition: all 0.4s ease;
   opacity: 1;
   fill: #24A3FF;

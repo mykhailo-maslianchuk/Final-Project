@@ -301,81 +301,82 @@ body {
             }
         }
     }
+}
 
-    .footer {
-        padding: 0 30px 30px;
-        background-color: #F5F5FA;
+.footer {
+    padding: 0 30px 30px;
+    background-color: #F5F5FA;
 
-        &-container {
-            padding-top: 30px;
-            border-top: 2px solid #E6E6F0;
+    &-container {
+        padding-top: 30px;
+        border-top: 2px solid #E6E6F0;
 
-            &-contact {
+        &-contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 21px;
+
+            .container-contact-list-map {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap: 21px;
+                gap: 10px;
 
-                .container-contact-list-map {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-
-                    &-item--address {
-                        color: #323264;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: normal;
-                    }
-
-                    &-item--link {
-                        .container-contact-list-map-item-link {
-                            color: #24A3FF;
-                            font-size: 12px;
-                            font-weight: 700;
-                            line-height: normal;
-                            letter-spacing: 1px;
-                            text-transform: uppercase;
-                        }
-                    }
-                }
-
-                .container-contact-list {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-
-                    &-item {
-
-                        &-number {
-                            color: #46466E;
-                            text-align: right;
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: normal;
-                        }
-
-                        &-email {
-                            color: #24A3FF;
-                            font-size: 16px;
-                            font-weight: 700;
-                            line-height: normal;
-                        }
-                    }
-                }
-
-                .container-footer-text {
-                    color: var(--Grey-Text, #B3B3BA);
+                &-item--address {
+                    color: #323264;
                     font-size: 16px;
                     font-weight: 400;
                     line-height: normal;
                 }
+
+                &-item--link {
+                    .container-contact-list-map-item-link {
+                        color: #24A3FF;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .container-contact-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                &-item {
+
+                    &-number {
+                        color: #46466E;
+                        text-align: right;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    &-email {
+                        color: #24A3FF;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            .container-footer-text {
+                color: var(--Grey-Text, #B3B3BA);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
             }
         }
     }
+}
