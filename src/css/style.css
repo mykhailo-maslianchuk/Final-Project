@@ -358,6 +358,15 @@ body {
   align-items: center;
   gap: 14px;
 }
+.section-achievements .achievements-container-switch-list-item-elements {
+  opacity: 0.2;
+  fill: #24A3FF;
+}
+.section-achievements .achievements-container-switch-list-item:hover svg.achievements-container-switch-list-item-elements {
+  transition: all 0.4s ease;
+  opacity: 1;
+  fill: #24A3FF;
+}
 
 .footer {
   padding: 0 30px 30px;
