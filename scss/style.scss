@@ -287,22 +287,35 @@ body {
         }
 
         &-card {
-            padding: 25px 0;
-            background-color: #FFF;
-            border-radius: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            &-img2 {
+            &-block {
+                padding: 24px 0;
+                border-radius: 12px;
+                min-width: 255px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #FFF;
+            }
+
+            &-block-1 {
+                img {
+                    width: 53px;
+                }
+            }
+
+            &-block-2 {
                 display: none;
             }
 
-            &-img3 {
+            &-block-3 {
                 display: none;
             }
 
-            &-img4 {
+            &-block-4 {
                 display: none;
             }
         }
@@ -351,6 +364,10 @@ body {
                 align-items: center;
                 gap: 10px;
 
+                svg {
+                    display: none
+                }
+
                 &-item--address {
                     color: #323264;
                     font-size: 16px;
@@ -376,6 +393,10 @@ body {
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
+
+                svg.point {
+                    display: none;
+                }
 
                 &-item {
 
@@ -407,6 +428,7 @@ body {
     }
 }
 
+//media Tablet SD
 @media screen and (min-width: 767px) {
     .header {
         &-top {
@@ -502,5 +524,89 @@ body {
 
     .section-team {
         padding-top: 60px;
+
+        &-container {
+            min-width: 768px;
+            min-height: 233px;
+
+            &-header {
+                font-size: 46px;
+                letter-spacing: 63px;
+
+            }
+        }
+    }
+
+    .section-info-more {
+        padding: 60px 60px 0;
+
+        .more-header-text {
+            max-width: 645px;
+        }
+
+        .more-header {
+            font-size: 38px;
+        }
+    }
+
+    .section-achievements {
+        .achievements-container {
+            &-card {
+                gap: 40px;
+
+                &-block {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-width: 132px;
+                }
+
+                &-block-2 {
+                    img {
+                        width: 106px;
+                    }
+                }
+
+                &-block-3 {
+                    img {
+                        width: 130px;
+                    }
+                }
+
+                &-block-4 {
+                    img {
+                        width: 110px;
+                    }
+                }
+            }
+
+            &-switch-list {
+                &-item--tablet_sd {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-container {
+            &-contact {
+                .container-contact-list-map {
+                    flex-direction: row;
+
+                    svg {
+                        display: block;
+                    }
+                }
+
+                .container-contact-list {
+                    flex-direction: row;
+
+                    svg.point {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }

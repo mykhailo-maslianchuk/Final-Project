@@ -355,20 +355,29 @@ body {
   text-transform: uppercase;
 }
 .section-achievements .achievements-container-card {
-  padding: 25px 0;
-  background-color: #FFF;
-  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-achievements .achievements-container-card-img2 {
+.section-achievements .achievements-container-card-block {
+  padding: 24px 0;
+  border-radius: 12px;
+  min-width: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+}
+.section-achievements .achievements-container-card-block-1 img {
+  width: 53px;
+}
+.section-achievements .achievements-container-card-block-2 {
   display: none;
 }
-.section-achievements .achievements-container-card-img3 {
+.section-achievements .achievements-container-card-block-3 {
   display: none;
 }
-.section-achievements .achievements-container-card-img4 {
+.section-achievements .achievements-container-card-block-4 {
   display: none;
 }
 .section-achievements .achievements-container-switch-list {
@@ -409,6 +418,9 @@ body {
   align-items: center;
   gap: 10px;
 }
+.footer-container-contact .container-contact-list-map svg {
+  display: none;
+}
 .footer-container-contact .container-contact-list-map-item--address {
   color: #323264;
   font-size: 16px;
@@ -429,6 +441,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.footer-container-contact .container-contact-list svg.point {
+  display: none;
 }
 .footer-container-contact .container-contact-list-item-number {
   color: #46466E;
@@ -513,5 +528,55 @@ body {
   }
   .section-team {
     padding-top: 60px;
+  }
+  .section-team-container {
+    min-width: 768px;
+    min-height: 233px;
+  }
+  .section-team-container-header {
+    font-size: 46px;
+    letter-spacing: 63px;
+  }
+  .section-info-more {
+    padding: 60px 60px 0;
+  }
+  .section-info-more .more-header-text {
+    max-width: 645px;
+  }
+  .section-info-more .more-header {
+    font-size: 38px;
+  }
+  .section-achievements .achievements-container-card {
+    gap: 40px;
+  }
+  .section-achievements .achievements-container-card-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 132px;
+  }
+  .section-achievements .achievements-container-card-block-2 img {
+    width: 106px;
+  }
+  .section-achievements .achievements-container-card-block-3 img {
+    width: 130px;
+  }
+  .section-achievements .achievements-container-card-block-4 img {
+    width: 110px;
+  }
+  .section-achievements .achievements-container-switch-list-item--tablet_sd {
+    display: none;
+  }
+  .footer .footer-container-contact .container-contact-list-map {
+    flex-direction: row;
+  }
+  .footer .footer-container-contact .container-contact-list-map svg {
+    display: block;
+  }
+  .footer .footer-container-contact .container-contact-list {
+    flex-direction: row;
+  }
+  .footer .footer-container-contact .container-contact-list svg.point {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
