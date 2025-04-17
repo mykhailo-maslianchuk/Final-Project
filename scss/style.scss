@@ -432,7 +432,6 @@ body {
 @media screen and (min-width: 767px) {
     .header {
         &-top {
-            display: flex;
             justify-content: start;
             gap: 6px;
             padding: 50px 60px 30px;
@@ -605,6 +604,120 @@ body {
                     svg.point {
                         display: block;
                     }
+                }
+            }
+        }
+    }
+}
+
+//media Tablet SD
+@media screen and (min-width: 1023px) {
+
+    .header {
+        padding: 50px 60px 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: relative;
+
+        &-top {
+            padding: 0;
+            align-items: flex-start;
+        }
+
+        &-footer {
+            padding: 0 0 6px 0;
+
+            &-nav {
+                position: absolute;
+                right: 60px;
+                top: 90px;
+
+            }
+        }
+    }
+
+    .section-info {
+        flex-direction: row;
+
+        &-main {
+            max-width: 486px;
+        }
+
+        &-aside {
+            max-height: 322px;
+        }
+    }
+
+    .section-team {
+        padding-top: 60px;
+
+        &-container {
+            min-width: 1034px;
+            min-height: 311px;
+
+            &-header {
+                font-size: 86px;
+                letter-spacing: 63px;
+
+            }
+        }
+    }
+
+    .section-info-more {
+        flex-direction: row;
+        gap: 60px;
+
+        .more-header {
+            min-width: 362px;
+        }
+    }
+
+    .section-achievements {
+        .achievements-container {
+            &-card {
+                &-block {
+                    min-width: 196px;
+                }
+
+                &-block-1 {
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                &-block-2 {
+                    img {
+                        width: 159px;
+                    }
+                }
+
+                &-block-3 {
+                    img {
+                        width: 195px;
+                    }
+                }
+
+                &-block-4 {
+                    img {
+                        width: 166px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-container {
+            position: relative;
+
+            &-contact {
+                align-items: flex-start;
+
+                .container-footer-text {
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
                 }
             }
         }

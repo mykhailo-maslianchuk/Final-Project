@@ -468,7 +468,6 @@ body {
 
 @media screen and (min-width: 767px) {
   .header-top {
-    display: flex;
     justify-content: start;
     gap: 6px;
     padding: 50px 60px 30px;
@@ -578,5 +577,79 @@ body {
   }
   .footer .footer-container-contact .container-contact-list svg.point {
     display: block;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .header {
+    padding: 50px 60px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+  }
+  .header-top {
+    padding: 0;
+    align-items: flex-start;
+  }
+  .header-footer {
+    padding: 0 0 6px 0;
+  }
+  .header-footer-nav {
+    position: absolute;
+    right: 60px;
+    top: 90px;
+  }
+  .section-info {
+    flex-direction: row;
+  }
+  .section-info-main {
+    max-width: 486px;
+  }
+  .section-info-aside {
+    max-height: 322px;
+  }
+  .section-team {
+    padding-top: 60px;
+  }
+  .section-team-container {
+    min-width: 1034px;
+    min-height: 311px;
+  }
+  .section-team-container-header {
+    font-size: 86px;
+    letter-spacing: 63px;
+  }
+  .section-info-more {
+    flex-direction: row;
+    gap: 60px;
+  }
+  .section-info-more .more-header {
+    min-width: 362px;
+  }
+  .section-achievements .achievements-container-card-block {
+    min-width: 196px;
+  }
+  .section-achievements .achievements-container-card-block-1 img {
+    width: 80px;
+  }
+  .section-achievements .achievements-container-card-block-2 img {
+    width: 159px;
+  }
+  .section-achievements .achievements-container-card-block-3 img {
+    width: 195px;
+  }
+  .section-achievements .achievements-container-card-block-4 img {
+    width: 166px;
+  }
+  .footer .footer-container {
+    position: relative;
+  }
+  .footer .footer-container-contact {
+    align-items: flex-start;
+  }
+  .footer .footer-container-contact .container-footer-text {
+    position: absolute;
+    top: 30px;
+    right: 0;
   }
 }/*# sourceMappingURL=style.css.map */
