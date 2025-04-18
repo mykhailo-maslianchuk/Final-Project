@@ -296,6 +296,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 13px;
 }
 .section-team-container-header {
   color: #FFF;
@@ -304,7 +305,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 13px;
   text-transform: uppercase;
 }
 
@@ -531,10 +531,10 @@ body {
   .section-team-container {
     min-width: 768px;
     min-height: 233px;
+    gap: 63px;
   }
   .section-team-container-header {
     font-size: 46px;
-    letter-spacing: 63px;
   }
   .section-info-more {
     padding: 60px 60px 0;
@@ -608,16 +608,13 @@ body {
   .section-info-aside {
     max-height: 322px;
   }
-  .section-team {
-    padding-top: 60px;
-  }
   .section-team-container {
     min-width: 1034px;
     min-height: 311px;
+    gap: 63px;
   }
   .section-team-container-header {
     font-size: 86px;
-    letter-spacing: 63px;
   }
   .section-info-more {
     flex-direction: row;
@@ -651,5 +648,45 @@ body {
     position: absolute;
     top: 30px;
     right: 0;
+  }
+}
+@media screen and (min-width: 1919px) {
+  .header {
+    padding: 50px 160px 0;
+  }
+  .header-footer-nav {
+    right: 160px;
+  }
+  .section-info {
+    padding: 50px 280px 0;
+  }
+  .section-info-main {
+    max-width: 942px;
+  }
+  .section-team-container {
+    min-width: 1920px;
+    min-height: 584px;
+    gap: 63px;
+  }
+  .section-team-container-header {
+    font-size: 96px;
+  }
+  .section-info-more {
+    padding: 60px 280px 0;
+  }
+  .section-info-more .more-header {
+    max-width: 362px;
+  }
+  .section-info-more .more-header-text {
+    max-width: 938px;
+  }
+  .section-achievements .achievements-container {
+    padding: 30px 160px;
+  }
+  .section-achievements .achievements-container-card-block {
+    min-width: 370px;
+  }
+  .footer {
+    padding: 0 160px;
   }
 }/*# sourceMappingURL=style.css.map */
