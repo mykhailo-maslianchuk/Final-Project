@@ -606,7 +606,7 @@ body {
     min-width: 388px;
   }
   .section-team-container {
-    min-width: 1034px;
+    min-width: 1024px;
     min-height: 311px;
     gap: 63px;
   }
@@ -650,6 +650,46 @@ body {
     right: 0;
   }
 }
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 50px 60px 0;
+  }
+  .header-footer-nav {
+    right: 60px;
+  }
+  .section-info {
+    padding: 60px 180px 0;
+  }
+  .section-info-main {
+    min-width: 662px;
+  }
+  .section-team-container {
+    min-width: 1440px;
+    min-height: 438px;
+    gap: 63px;
+  }
+  .section-team-container-header {
+    font-size: 96px;
+  }
+  .section-info-more {
+    padding: 60px 180px 0;
+  }
+  .section-info-more .more-header {
+    min-width: 362px;
+  }
+  .section-info-more .more-header-text {
+    min-width: 658px;
+  }
+  .section-achievements .achievements-container {
+    padding: 30px 60px;
+  }
+  .section-achievements .achievements-container-card-block {
+    min-width: 300px;
+  }
+  .footer {
+    padding: 0 60px 30px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .header {
     padding: 50px 160px 0;
@@ -688,45 +728,5 @@ body {
   }
   .footer {
     padding: 0 160px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .header {
-    padding: 50px 60px 0;
-  }
-  .header-footer-nav {
-    right: 60px;
-  }
-  .section-info {
-    padding: 50px 180px 0;
-  }
-  .section-info-main {
-    min-width: 662px;
-  }
-  .section-team-container {
-    min-width: 1440px;
-    min-height: 438px;
-    gap: 63px;
-  }
-  .section-team-container-header {
-    font-size: 96px;
-  }
-  .section-info-more {
-    padding: 60px 180px 0;
-  }
-  .section-info-more .more-header {
-    min-width: 362px;
-  }
-  .section-info-more .more-header-text {
-    min-width: 658px;
-  }
-  .section-achievements .achievements-container {
-    padding: 30px 60px;
-  }
-  .section-achievements .achievements-container-card-block {
-    min-width: 300px;
-  }
-  .footer {
-    padding: 0 60px 30px;
   }
 }/*# sourceMappingURL=style.css.map */
