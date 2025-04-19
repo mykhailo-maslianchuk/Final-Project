@@ -256,7 +256,7 @@ body {
 }
 .section-info-aside .aside-list {
   margin-left: 30px;
-  max-width: 281px;
+  min-width: 281px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -315,7 +315,6 @@ body {
   gap: 30px;
 }
 .section-info-more .more-header-text {
-  max-width: 315px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -466,7 +465,7 @@ body {
   line-height: normal;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .header-top {
     justify-content: start;
     gap: 6px;
@@ -493,7 +492,7 @@ body {
     padding: 0;
   }
   .header-footer-logo .logo-link-svg {
-    max-width: 159px;
+    min-width: 159px;
   }
   .header-footer-logo .logo-link-svg-element-1 {
     width: 130px;
@@ -517,13 +516,10 @@ body {
     padding: 60px 60px 0;
   }
   .section-info-main {
-    max-width: 648px;
+    min-width: 648px;
   }
   .section-info-main .main-header {
     font-size: 38px;
-  }
-  .section-info-aside .aside-list {
-    max-width: none;
   }
   .section-team {
     padding-top: 60px;
@@ -540,7 +536,7 @@ body {
     padding: 60px 60px 0;
   }
   .section-info-more .more-header-text {
-    max-width: 645px;
+    min-width: 645px;
   }
   .section-info-more .more-header {
     font-size: 38px;
@@ -579,7 +575,7 @@ body {
     display: block;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .header {
     padding: 50px 60px 0;
     display: flex;
@@ -603,10 +599,11 @@ body {
     flex-direction: row;
   }
   .section-info-main {
-    max-width: 486px;
+    min-width: 486px;
   }
   .section-info-aside {
     max-height: 322px;
+    min-width: 388px;
   }
   .section-team-container {
     min-width: 1034px;
@@ -622,6 +619,9 @@ body {
   }
   .section-info-more .more-header {
     min-width: 362px;
+  }
+  .section-info-more .more-header-text {
+    min-width: 482px;
   }
   .section-achievements .achievements-container-card-block {
     min-width: 196px;
@@ -650,7 +650,7 @@ body {
     right: 0;
   }
 }
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1920px) {
   .header {
     padding: 50px 160px 0;
   }
@@ -661,7 +661,7 @@ body {
     padding: 50px 280px 0;
   }
   .section-info-main {
-    max-width: 942px;
+    min-width: 942px;
   }
   .section-team-container {
     min-width: 1920px;
@@ -675,10 +675,10 @@ body {
     padding: 60px 280px 0;
   }
   .section-info-more .more-header {
-    max-width: 362px;
+    min-width: 362px;
   }
   .section-info-more .more-header-text {
-    max-width: 938px;
+    min-width: 938px;
   }
   .section-achievements .achievements-container {
     padding: 30px 160px;
@@ -688,5 +688,45 @@ body {
   }
   .footer {
     padding: 0 160px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 50px 60px 0;
+  }
+  .header-footer-nav {
+    right: 60px;
+  }
+  .section-info {
+    padding: 50px 180px 0;
+  }
+  .section-info-main {
+    min-width: 662px;
+  }
+  .section-team-container {
+    min-width: 1440px;
+    min-height: 438px;
+    gap: 63px;
+  }
+  .section-team-container-header {
+    font-size: 96px;
+  }
+  .section-info-more {
+    padding: 60px 180px 0;
+  }
+  .section-info-more .more-header {
+    min-width: 362px;
+  }
+  .section-info-more .more-header-text {
+    min-width: 658px;
+  }
+  .section-achievements .achievements-container {
+    padding: 30px 60px;
+  }
+  .section-achievements .achievements-container-card-block {
+    min-width: 300px;
+  }
+  .footer {
+    padding: 0 60px 30px;
   }
 }/*# sourceMappingURL=style.css.map */
