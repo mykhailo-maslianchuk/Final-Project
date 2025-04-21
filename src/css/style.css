@@ -251,148 +251,65 @@ body {
   font-weight: 400;
   line-height: 30px;
 }
-.section-info-aside {
-  border-left: 4px solid #E6E6F0;
+
+.section-card {
+  padding: 30px 30px 60px;
 }
-.section-info-aside .aside-list {
-  margin-left: 30px;
-  min-width: 281px;
+.section-card__container-card {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
-.section-info-aside .aside-list-item {
+.section-card__container-card__card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
-.section-info-aside .aside-list-item-icon-info {
+.section-card__container-card__card-img {
+  width: 315px;
+  height: 300px;
+  border-radius: 12px;
+}
+.section-card__container-card__card-img--card-1 {
+  background: url(../../img/Team-1.jpg) center center/cover no-repeat;
+}
+.section-card__container-card__card-img--card-2 {
+  background: url(../../img/Team-2.jpg) center center/cover no-repeat;
+}
+.section-card__container-card__card-img--card-3 {
+  background: url(../../img/Team-3.jpg) center center/cover no-repeat;
+}
+.section-card__container-card__card-img--card-4 {
+  background: url(../../img/Team-4.jpg) center center/cover no-repeat;
+}
+.section-card__container-card__card-img--card-5 {
+  background: url(../../img/Team-5.jpg) center center/cover no-repeat;
+}
+.section-card__container-card__card-img--card-6 {
+  background: url(../../img/Team-6.jpg) center center/cover no-repeat;
+}
+.section-card__container-card__card-container-footer {
   display: flex;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 15px;
 }
-.section-info-aside .aside-list-item-icon-info .icon-info-number {
-  background: linear-gradient(90deg, #F0145A, #EF8080);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
+.section-card__container-card__card-container-footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 268px;
 }
-.section-info-aside .aside-list-item-text {
+.section-card__container-card__card-container-footer-text__header {
   color: #323264;
   font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.section-team {
-  padding-top: 30px;
-}
-.section-team-container {
-  min-width: 375px;
-  min-height: 114px;
-  background: url(../../img/Team.jpg) center center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 13px;
-}
-.section-team-container-header {
-  color: #FFF;
-  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.section-info-more {
-  padding: 30px 30px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.section-info-more .more-header-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  color: #000;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
-.section-info-more .more-header {
-  background: linear-gradient(90deg, #F0145A, #EF8080);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 30px;
   font-weight: 700;
   line-height: normal;
 }
-
-.section-achievements {
-  padding-top: 60px;
-}
-.section-achievements .achievements-container {
-  padding: 30px 60px;
-  background-color: #F5F5FA;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.section-achievements .achievements-container-header {
-  color: #323264;
-  text-align: center;
+.section-card__container-card__card-container-footer-text__subtitle {
+  color: #B3B3BA;
   font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.section-achievements .achievements-container-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-achievements .achievements-container-card-block {
-  padding: 24px 0;
-  border-radius: 12px;
-  min-width: 255px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFF;
-}
-.section-achievements .achievements-container-card-block-1 img {
-  width: 53px;
-}
-.section-achievements .achievements-container-card-block-2 {
-  display: none;
-}
-.section-achievements .achievements-container-card-block-3 {
-  display: none;
-}
-.section-achievements .achievements-container-card-block-4 {
-  display: none;
-}
-.section-achievements .achievements-container-switch-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-}
-.section-achievements .achievements-container-switch-list-item:hover svg.achievements-container-switch-list-item-elements {
-  transition: all 0.4s ease;
-  opacity: 1;
-  fill: #24A3FF;
-}
-.section-achievements .achievements-container-switch-list-item-elements {
-  opacity: 0.2;
-  fill: #24A3FF;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .footer {
@@ -401,7 +318,6 @@ body {
 }
 .footer-container {
   padding-top: 30px;
-  border-top: 2px solid #E6E6F0;
 }
 .footer-container-contact {
   display: flex;
