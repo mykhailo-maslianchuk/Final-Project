@@ -1,0 +1,732 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "Montserrat";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+menu,
+ul li {
+  list-style: none;
+}
+
+nav,
+ul li {
+  list-style: none;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  background-color: #fff;
+}
+
+.header-top {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5F5FA;
+}
+.header-top-language .language-list {
+  display: flex;
+}
+.header-top-language .language-list-item {
+  padding: 5px 7px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-top-language .language-list-item--active {
+  border-radius: 8px;
+  background-color: #F0145A;
+  color: #fff;
+}
+.header-top-contact .contact-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.header-top-contact .contact-list-item--address .contact-list-item-link {
+  display: none;
+  color: #B3B3BA;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.header-top-contact .contact-list-item--tel .contact-list-item-link {
+  color: #B3B3BA;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-top-contact .contact-list-item--icon .contact-list-item-link {
+  display: none;
+}
+.header-top-contact svg {
+  display: none;
+}
+.header-footer {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-footer-logo .logo-link {
+  padding: 15px 0 10px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.header-footer-logo .logo-link-svg {
+  max-width: 86px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  column-gap: 4px;
+  row-gap: 3.47px;
+}
+.header-footer-logo .logo-link-text {
+  color: #323264;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+.header-footer-nav {
+  display: none;
+}
+.header-footer-nav .nav-list {
+  display: flex;
+  gap: 15px;
+}
+.header-footer-nav .nav-list-item {
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+.header-footer-nav .nav-list-item-link {
+  color: #24A3FF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-footer-nav .nav-list-item-link--active {
+  color: #F0145A;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.header-footer-nav .nav-list-item--active {
+  border-bottom: 2px solid #F0145A;
+}
+
+.section-info {
+  padding: 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-info-main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.section-info-main .main-header {
+  background: linear-gradient(90deg, #F0145A, #EF8080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+}
+.section-info-main .main-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #000;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.section-info-aside {
+  border-left: 4px solid #E6E6F0;
+}
+.section-info-aside .aside-list {
+  margin-left: 30px;
+  min-width: 281px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.section-info-aside .aside-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-info-aside .aside-list-item-icon-info {
+  display: flex;
+  gap: 8px;
+}
+.section-info-aside .aside-list-item-icon-info .icon-info-number {
+  background: linear-gradient(90deg, #F0145A, #EF8080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+}
+.section-info-aside .aside-list-item-text {
+  color: #323264;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-team {
+  padding-top: 30px;
+}
+.section-team-container {
+  min-width: 375px;
+  min-height: 114px;
+  background: url(../../img/Team.jpg) center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+.section-team-container-header {
+  color: #FFF;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.section-info-more {
+  padding: 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-info-more .more-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #000;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.section-info-more .more-header {
+  background: linear-gradient(90deg, #F0145A, #EF8080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section-achievements {
+  padding-top: 60px;
+}
+.section-achievements .achievements-container {
+  padding: 30px 60px;
+  background-color: #F5F5FA;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-achievements .achievements-container-header {
+  color: #323264;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.section-achievements .achievements-container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-achievements .achievements-container-card-block {
+  padding: 24px 0;
+  border-radius: 12px;
+  min-width: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+}
+.section-achievements .achievements-container-card-block-1 img {
+  width: 53px;
+}
+.section-achievements .achievements-container-card-block-2 {
+  display: none;
+}
+.section-achievements .achievements-container-card-block-3 {
+  display: none;
+}
+.section-achievements .achievements-container-card-block-4 {
+  display: none;
+}
+.section-achievements .achievements-container-switch-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+.section-achievements .achievements-container-switch-list-item:hover svg.achievements-container-switch-list-item-elements {
+  transition: all 0.4s ease;
+  opacity: 1;
+  fill: #24A3FF;
+}
+.section-achievements .achievements-container-switch-list-item-elements {
+  opacity: 0.2;
+  fill: #24A3FF;
+}
+
+.footer {
+  padding: 0 30px 30px;
+  background-color: #F5F5FA;
+}
+.footer-container {
+  padding-top: 30px;
+  border-top: 2px solid #E6E6F0;
+}
+.footer-container-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+}
+.footer-container-contact .container-contact-list-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-container-contact .container-contact-list-map svg {
+  display: none;
+}
+.footer-container-contact .container-contact-list-map-item--address {
+  color: #323264;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer-container-contact .container-contact-list-map-item--link .container-contact-list-map-item-link {
+  color: #24A3FF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.footer-container-contact .container-contact-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-container-contact .container-contact-list svg.point {
+  display: none;
+}
+.footer-container-contact .container-contact-list-item-number {
+  color: #46466E;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer-container-contact .container-contact-list-item-email {
+  color: #24A3FF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer-container-contact .container-footer-text {
+  color: var(--Grey-Text, #B3B3BA);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .header-top {
+    justify-content: start;
+    gap: 6px;
+    padding: 50px 60px 30px;
+    background-color: #fff;
+  }
+  .header-top-contact .contact-list svg {
+    display: block;
+  }
+  .header-top-contact .contact-list-item--address .contact-list-item-link {
+    display: block;
+  }
+  .header-top-contact .contact-list-item--icon .contact-list-item-link {
+    display: block;
+  }
+  .header-footer {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .header-footer-logo .logo-link {
+    padding: 0;
+  }
+  .header-footer-logo .logo-link-svg {
+    min-width: 159px;
+  }
+  .header-footer-logo .logo-link-svg-element-1 {
+    width: 130px;
+  }
+  .header-footer-logo .logo-link-svg-element-2 {
+    width: 21px;
+  }
+  .header-footer-logo .logo-link-svg-element-3 {
+    width: 130px;
+  }
+  .header-footer-logo .logo-link-text {
+    font-size: 36px;
+  }
+  .header-footer-burger {
+    display: none;
+  }
+  .header-footer-nav {
+    display: block;
+  }
+  .section-info {
+    padding: 60px 60px 0;
+  }
+  .section-info-main {
+    min-width: 648px;
+  }
+  .section-info-main .main-header {
+    font-size: 38px;
+  }
+  .section-team {
+    padding-top: 60px;
+  }
+  .section-team-container {
+    min-width: 768px;
+    min-height: 233px;
+    gap: 63px;
+  }
+  .section-team-container-header {
+    font-size: 46px;
+  }
+  .section-info-more {
+    padding: 60px 60px 0;
+  }
+  .section-info-more .more-header-text {
+    min-width: 645px;
+  }
+  .section-info-more .more-header {
+    font-size: 38px;
+  }
+  .section-achievements .achievements-container-card {
+    gap: 40px;
+  }
+  .section-achievements .achievements-container-card-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 132px;
+  }
+  .section-achievements .achievements-container-card-block-2 img {
+    width: 106px;
+  }
+  .section-achievements .achievements-container-card-block-3 img {
+    width: 130px;
+  }
+  .section-achievements .achievements-container-card-block-4 img {
+    width: 110px;
+  }
+  .section-achievements .achievements-container-switch-list-item--tablet_sd {
+    display: none;
+  }
+  .footer .footer-container-contact .container-contact-list-map {
+    flex-direction: row;
+  }
+  .footer .footer-container-contact .container-contact-list-map svg {
+    display: block;
+  }
+  .footer .footer-container-contact .container-contact-list {
+    flex-direction: row;
+  }
+  .footer .footer-container-contact .container-contact-list svg.point {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 50px 60px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+  }
+  .header-top {
+    padding: 0;
+    align-items: flex-start;
+  }
+  .header-footer {
+    padding: 0 0 6px 0;
+  }
+  .header-footer-nav {
+    position: absolute;
+    right: 60px;
+    top: 90px;
+  }
+  .section-info {
+    flex-direction: row;
+  }
+  .section-info-main {
+    min-width: 486px;
+  }
+  .section-info-aside {
+    max-height: 322px;
+    min-width: 388px;
+  }
+  .section-team-container {
+    min-width: 1024px;
+    min-height: 311px;
+    gap: 63px;
+  }
+  .section-team-container-header {
+    font-size: 86px;
+  }
+  .section-info-more {
+    flex-direction: row;
+    gap: 60px;
+  }
+  .section-info-more .more-header {
+    min-width: 362px;
+  }
+  .section-info-more .more-header-text {
+    min-width: 482px;
+  }
+  .section-achievements .achievements-container-card-block {
+    min-width: 196px;
+  }
+  .section-achievements .achievements-container-card-block-1 img {
+    width: 80px;
+  }
+  .section-achievements .achievements-container-card-block-2 img {
+    width: 159px;
+  }
+  .section-achievements .achievements-container-card-block-3 img {
+    width: 195px;
+  }
+  .section-achievements .achievements-container-card-block-4 img {
+    width: 166px;
+  }
+  .footer .footer-container {
+    position: relative;
+  }
+  .footer .footer-container-contact {
+    align-items: flex-start;
+  }
+  .footer .footer-container-contact .container-footer-text {
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 50px 60px 0;
+  }
+  .header-footer-nav {
+    right: 60px;
+  }
+  .section-info {
+    padding: 60px 180px 0;
+  }
+  .section-info-main {
+    min-width: 662px;
+  }
+  .section-team-container {
+    min-width: 1440px;
+    min-height: 438px;
+    gap: 63px;
+  }
+  .section-team-container-header {
+    font-size: 96px;
+  }
+  .section-info-more {
+    padding: 60px 180px 0;
+  }
+  .section-info-more .more-header {
+    min-width: 362px;
+  }
+  .section-info-more .more-header-text {
+    min-width: 658px;
+  }
+  .section-achievements .achievements-container {
+    padding: 30px 60px;
+  }
+  .section-achievements .achievements-container-card-block {
+    min-width: 300px;
+  }
+  .footer {
+    padding: 0 60px 30px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header {
+    padding: 50px 160px 0;
+  }
+  .header-footer-nav {
+    right: 160px;
+  }
+  .section-info {
+    padding: 60px 280px 0;
+  }
+  .section-info-main {
+    min-width: 942px;
+  }
+  .section-team-container {
+    min-width: 1920px;
+    min-height: 584px;
+    gap: 63px;
+  }
+  .section-team-container-header {
+    font-size: 96px;
+  }
+  .section-info-more {
+    padding: 60px 280px 0;
+  }
+  .section-info-more .more-header {
+    min-width: 362px;
+  }
+  .section-info-more .more-header-text {
+    min-width: 938px;
+  }
+  .section-achievements .achievements-container {
+    padding: 30px 160px;
+  }
+  .section-achievements .achievements-container-card-block {
+    min-width: 370px;
+  }
+  .footer {
+    padding: 0 160px;
+  }
+}/*# sourceMappingURL=style.css.map */
