@@ -258,15 +258,16 @@ body {
 .section-card__container-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 .section-card__container-card__card {
+  width: 315px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .section-card__container-card__card-img {
-  width: 315px;
   height: 300px;
   border-radius: 12px;
 }
@@ -437,46 +438,23 @@ body {
   .section-info-main .main-header {
     font-size: 38px;
   }
-  .section-team {
-    padding-top: 60px;
+  .section-card {
+    padding: 60px 60px;
   }
-  .section-team-container {
-    min-width: 768px;
-    min-height: 233px;
-    gap: 63px;
+  .section-card__container-card {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px 60px;
   }
-  .section-team-container-header {
-    font-size: 46px;
+  .section-card__container-card__card {
+    width: 294px;
   }
-  .section-info-more {
-    padding: 60px 60px 0;
+  .section-card__container-card__card-img {
+    height: 400px;
   }
-  .section-info-more .more-header-text {
-    min-width: 645px;
-  }
-  .section-info-more .more-header {
-    font-size: 38px;
-  }
-  .section-achievements .achievements-container-card {
-    gap: 40px;
-  }
-  .section-achievements .achievements-container-card-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 132px;
-  }
-  .section-achievements .achievements-container-card-block-2 img {
-    width: 106px;
-  }
-  .section-achievements .achievements-container-card-block-3 img {
-    width: 130px;
-  }
-  .section-achievements .achievements-container-card-block-4 img {
-    width: 110px;
-  }
-  .section-achievements .achievements-container-switch-list-item--tablet_sd {
-    display: none;
+  .section-card__container-card__card-container-footer-text {
+    min-width: 247px;
   }
   .footer .footer-container-contact .container-contact-list-map {
     flex-direction: row;
@@ -521,38 +499,24 @@ body {
     max-height: 322px;
     min-width: 388px;
   }
-  .section-team-container {
-    min-width: 1024px;
-    min-height: 311px;
-    gap: 63px;
+  .section-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 60px;
   }
-  .section-team-container-header {
-    font-size: 86px;
-  }
-  .section-info-more {
+  .section-card__container-card {
+    max-width: 1200px;
     flex-direction: row;
-    gap: 60px;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
   }
-  .section-info-more .more-header {
-    min-width: 362px;
+  .section-card__container-card__card {
+    width: 261px;
   }
-  .section-info-more .more-header-text {
-    min-width: 482px;
-  }
-  .section-achievements .achievements-container-card-block {
-    min-width: 196px;
-  }
-  .section-achievements .achievements-container-card-block-1 img {
-    width: 80px;
-  }
-  .section-achievements .achievements-container-card-block-2 img {
-    width: 159px;
-  }
-  .section-achievements .achievements-container-card-block-3 img {
-    width: 195px;
-  }
-  .section-achievements .achievements-container-card-block-4 img {
-    width: 166px;
+  .section-card__container-card__card-container-footer-text {
+    min-width: 214px;
   }
   .footer .footer-container {
     position: relative;
@@ -579,28 +543,18 @@ body {
   .section-info-main {
     min-width: 662px;
   }
-  .section-team-container {
-    min-width: 1440px;
-    min-height: 438px;
-    gap: 63px;
+  .section-card {
+    display: block;
+    padding: 60px 60px;
   }
-  .section-team-container-header {
-    font-size: 96px;
+  .section-card__container-card {
+    max-width: 1750px;
   }
-  .section-info-more {
-    padding: 60px 180px 0;
+  .section-card__container-card__card {
+    width: 400px;
   }
-  .section-info-more .more-header {
-    min-width: 362px;
-  }
-  .section-info-more .more-header-text {
-    min-width: 658px;
-  }
-  .section-achievements .achievements-container {
-    padding: 30px 60px;
-  }
-  .section-achievements .achievements-container-card-block {
-    min-width: 300px;
+  .section-card__container-card__card-container-footer-text {
+    min-width: 214px;
   }
   .footer {
     padding: 0 60px 30px;
@@ -619,28 +573,17 @@ body {
   .section-info-main {
     min-width: 942px;
   }
-  .section-team-container {
-    min-width: 1920px;
-    min-height: 584px;
-    gap: 63px;
+  .section-card {
+    padding: 60px 160px;
   }
-  .section-team-container-header {
-    font-size: 96px;
+  .section-card__container-card {
+    max-width: none;
   }
-  .section-info-more {
-    padding: 60px 280px 0;
+  .section-card__container-card__card {
+    width: 493px;
   }
-  .section-info-more .more-header {
-    min-width: 362px;
-  }
-  .section-info-more .more-header-text {
-    min-width: 938px;
-  }
-  .section-achievements .achievements-container {
-    padding: 30px 160px;
-  }
-  .section-achievements .achievements-container-card-block {
-    min-width: 370px;
+  .section-card__container-card__card-container-footer-text {
+    min-width: 214px;
   }
   .footer {
     padding: 0 160px;

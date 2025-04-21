@@ -180,15 +180,16 @@ body {
     &__container-card {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 30px;
 
         &__card {
+            width: 315px;
             display: flex;
             flex-direction: column;
             gap: 15px;
 
             &-img {
-                width: 315px;
                 height: 300px;
                 border-radius: 12px;
 
@@ -420,67 +421,26 @@ body {
         }
     }
 
-    .section-team {
-        padding-top: 60px;
+    .section-card {
+        padding: 60px 60px;
 
-        &-container {
-            min-width: 768px;
-            min-height: 233px;
-            gap: 63px;
+        &__container-card {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 60px 60px;
 
-            &-header {
-                font-size: 46px;
+            &__card {
+                width: 294px;
 
-            }
-        }
-    }
-
-    .section-info-more {
-        padding: 60px 60px 0;
-
-        .more-header-text {
-            min-width: 645px;
-        }
-
-        .more-header {
-            font-size: 38px;
-        }
-    }
-
-    .section-achievements {
-        .achievements-container {
-            &-card {
-                gap: 40px;
-
-                &-block {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    min-width: 132px;
+                &-img {
+                    height: 400px;
                 }
 
-                &-block-2 {
-                    img {
-                        width: 106px;
+                &-container-footer {
+                    &-text {
+                        min-width: 247px;
                     }
-                }
-
-                &-block-3 {
-                    img {
-                        width: 130px;
-                    }
-                }
-
-                &-block-4 {
-                    img {
-                        width: 110px;
-                    }
-                }
-            }
-
-            &-switch-list {
-                &-item--tablet_sd {
-                    display: none;
                 }
             }
         }
@@ -549,59 +509,26 @@ body {
         }
     }
 
-    .section-team {
-        &-container {
-            min-width: 1024px;
-            min-height: 311px;
-            gap: 63px;
+    .section-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 60px;
 
-            &-header {
-                font-size: 86px;
-            }
-        }
-    }
+        &__container-card {
+            max-width: 1200px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
 
-    .section-info-more {
-        flex-direction: row;
-        gap: 60px;
 
-        .more-header {
-            min-width: 362px;
-        }
+            &__card {
+                width: 261px;
 
-        .more-header-text {
-            min-width: 482px;
-        }
-    }
-
-    .section-achievements {
-        .achievements-container {
-            &-card {
-                &-block {
-                    min-width: 196px;
-                }
-
-                &-block-1 {
-                    img {
-                        width: 80px;
-                    }
-                }
-
-                &-block-2 {
-                    img {
-                        width: 159px;
-                    }
-                }
-
-                &-block-3 {
-                    img {
-                        width: 195px;
-                    }
-                }
-
-                &-block-4 {
-                    img {
-                        width: 166px;
+                &-container-footer {
+                    &-text {
+                        min-width: 214px;
                     }
                 }
             }
@@ -645,37 +572,21 @@ body {
         }
     }
 
-    .section-team {
-        &-container {
-            min-width: 1440px;
-            min-height: 438px;
-            gap: 63px;
+    .section-card {
+        display: block;
+        padding: 60px 60px;
 
-            &-header {
-                font-size: 96px;
-            }
-        }
-    }
+        &__container-card {
+            max-width: 1750px;
 
-    .section-info-more {
-        padding: 60px 180px 0;
 
-        .more-header {
-            min-width: 362px;
-        }
+            &__card {
+                width: 400px;
 
-        .more-header-text {
-            min-width: 658px;
-        }
-    }
-
-    .section-achievements {
-        .achievements-container {
-            padding: 30px 60px;
-
-            &-card {
-                &-block {
-                    min-width: 300px;
+                &-container-footer {
+                    &-text {
+                        min-width: 214px;
+                    }
                 }
             }
         }
@@ -706,37 +617,20 @@ body {
         }
     }
 
-    .section-team {
-        &-container {
-            min-width: 1920px;
-            min-height: 584px;
-            gap: 63px;
+    .section-card {
+        padding: 60px 160px;
 
-            &-header {
-                font-size: 96px;
-            }
-        }
-    }
+        &__container-card {
+            max-width: none;
 
-    .section-info-more {
-        padding: 60px 280px 0;
 
-        .more-header {
-            min-width: 362px;
-        }
+            &__card {
+                width: 493px;
 
-        .more-header-text {
-            min-width: 938px;
-        }
-    }
-
-    .section-achievements {
-        .achievements-container {
-            padding: 30px 160px;
-
-            &-card {
-                &-block {
-                    min-width: 370px;
+                &-container-footer {
+                    &-text {
+                        min-width: 214px;
+                    }
                 }
             }
         }
