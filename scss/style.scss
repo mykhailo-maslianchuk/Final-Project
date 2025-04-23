@@ -141,11 +141,156 @@ body {
     }
 }
 
+.section-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 30px;
+    background-color: #F5F5FA;
+
+    &-selection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__container-block {
+            padding: 2px 2px;
+            display: flex;
+            gap: 2px;
+            background-color: #E6E6F0;
+            border-radius: 12px 12px 12px 12px;
+
+            &-elements {
+                padding: 8px 30px 10px;
+
+                &-link {
+                    color: #323264;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+
+            &-elements-1 {
+                border-radius: 10px 10px 10px 10px;
+                background-color: #fff;
+            }
+
+            &-elements-2:hover {
+                border-radius: 10px 10px 10px 10px;
+                background-color: #F5F5FA;
+            }
+        }
+    }
+
+    &-post {
+        &__container-post {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            &__card-post {
+                min-width: 280px;
+                max-width: 315px;
+                border-radius: 0 0 8px 8px;
+                background-color: #fff;
+
+                &-img {
+                    height: 200px;
+                    border-radius: 8px 8px 0 0;
+                }
+
+                &-img-1 {
+                    background: url(../../img/Publication-1.jpg) center center / cover no-repeat;
+                }
+
+                &-img-2 {
+                    background: url(../../img/Publication-2.jpg) center center / cover no-repeat;
+                }
+
+                &-img-3 {
+                    background: url(../../img/Publication-3.jpg) center center / cover no-repeat;
+                }
+
+                &-img-4 {
+                    background: url(../../img/Publication-4.jpg) center center / cover no-repeat;
+                }
+
+                &-img-5 {
+                    background: url(../../img/Publication-5.jpg) center center / cover no-repeat;
+                }
+
+                &-img-6 {
+                    display: none;
+                }
+
+                &-text {
+                    padding: 30px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    &-header {
+                        color: #24A3FF;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    &-sub-heading {
+                        color: #B3B3BA;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    &-br {
+                        height: 4px;
+                        background-color: #E6E6F0;
+                    }
+
+                    &-main {
+                        color: #000;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-button {
+            border-radius: 12px 12px 12px 12px;
+            background: #24A3FF;
+            box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+            padding: 18px 30px;
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
 .footer {
     padding: 0 30px 30px;
     background-color: #F5F5FA;
 
     &-container {
+        border-top: 2px solid #E6E6F0;
         padding-top: 30px;
 
         &-contact {
@@ -217,7 +362,7 @@ body {
             }
 
             .container-footer-text {
-                color: var(--Grey-Text, #B3B3BA);
+                color: #B3B3BA;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: normal;
@@ -301,6 +446,29 @@ body {
         }
     }
 
+    .section-main {
+        padding: 30px 60px;
+
+
+        &-post {
+            &__container-post {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: stretch;
+                gap: 30px 30px;
+
+                &__card-post {
+                    min-width: none;
+                    max-width: none;
+                    width: 309px;
+                }
+            }
+        }
+    }
+
+
     .footer {
         .footer-container {
             &-contact {
@@ -351,6 +519,23 @@ body {
         }
     }
 
+    .section-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 60px;
+
+        &-post {
+            max-width: 1200px;
+
+            &__container-post {
+                &__card-post {
+                    width: 281px;
+                }
+            }
+        }
+    }
+
     .footer {
         .footer-container {
             position: relative;
@@ -380,6 +565,18 @@ body {
         }
     }
 
+    .section-main {
+        &-post {
+            max-width: 1700px;
+
+            &__container-post {
+                &__card-post {
+                    width: 420px;
+                }
+            }
+        }
+    }
+
     .footer {
         padding: 0 60px 30px;
     }
@@ -393,6 +590,20 @@ body {
         &-footer {
             &-nav {
                 right: 160px;
+            }
+        }
+    }
+
+    .section-main {
+        padding: 30px 160px;
+
+        &-post {
+            max-width: none;
+
+            &__container-post {
+                &__card-post {
+                    width: 513px;
+                }
             }
         }
     }
