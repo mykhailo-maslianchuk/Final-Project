@@ -305,6 +305,9 @@ body {
   font-weight: 700;
   line-height: normal;
 }
+.section-main-post__container-post__card-post-text-header:hover {
+  color: #F0145A;
+}
 .section-main-post__container-post__card-post-text-sub-heading {
   color: #B3B3BA;
   font-size: 12px;

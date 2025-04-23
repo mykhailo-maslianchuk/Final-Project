@@ -312,6 +312,12 @@ body {
   font-weight: 400;
   line-height: 22px;
 }
+.section-card__container-card__card-container-footer:hover .section-card__container-card__card-container-footer-text > .section-card__container-card__card-container-footer-text__header {
+  color: #F0145A;
+}
+.section-card__container-card__card-container-footer:hover .section-card__container-card__card-container-footer-link > .section-card__container-card__card-container-footer-link-svg path {
+  stroke: #F0145A;
+}
 
 .footer {
   padding: 0 30px 30px;

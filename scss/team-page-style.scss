@@ -245,6 +245,14 @@ body {
                     }
                 }
             }
+
+            &-container-footer:hover .section-card__container-card__card-container-footer-text>.section-card__container-card__card-container-footer-text__header {
+                color: #F0145A;
+            }
+
+            &-container-footer:hover .section-card__container-card__card-container-footer-link>.section-card__container-card__card-container-footer-link-svg path {
+                stroke: #F0145A;
+            }
         }
     }
 }
